@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     const eventSource = new EventSource(
-      "http://localhost:8080/v1/subscribe/inquiry"
+      "http://localhost:8080/v1/events/inquiry/subscriptions"
     );
 
     eventSource.addEventListener("sse", (e) => {
